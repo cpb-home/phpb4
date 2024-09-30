@@ -29,7 +29,7 @@ do {
             break;
 
         case OPERATION_PRINT:
-            printListOfGoods($goods);
+            printListOfGoods($items);
             break;
     }
 
