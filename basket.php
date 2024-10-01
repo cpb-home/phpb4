@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 const OPERATION_EXIT = 0;
 const OPERATION_ADD = 1;
 const OPERATION_DELETE = 2;
@@ -45,7 +47,7 @@ echo 'Программа завершена' . PHP_EOL;
  * @param array $operations array of possible operations
  * @return int returns the operation number of user selection
  */
-function getOperationNumber(array $items, array $operations): int {
+function getOperationNumber(array $items, array $operations): string {
     system('cls'); // windows
 
     do {
